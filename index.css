@@ -18,10 +18,19 @@ a { color: inherit; text-decoration: none; }
 .button { display: inline-block; padding: 9px 25px; border-radius: 20px; background: teal; color: white; font-size: 13px; font-weight: bold; }
 
 .profile {
-  width: 180px; height: 180px; border-radius: 50%; overflow: hidden;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
   background: paleturquoise;
 }
-.profile img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
+.profile img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
 
 .about { display: flex; align-items: center; gap: 40px; }
 .about div { width: 50%; }
@@ -44,10 +53,18 @@ a { color: inherit; text-decoration: none; }
 
 .projects { display: flex; gap: 25px; }
 .project-card {
-  width: 50%; min-height: 160px; display: flex; gap: 12px;
-  padding: 12px; border: 1px solid aqua; border-radius: 5px;
+  width: 50%;
+  min-height: 160px;
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid aqua;
+  border-radius: 5px;
 }
-.project-card .image { width: 42%; height: 135px; }
+.project-card .image {
+  width: 42%;
+  height: 135px;
+}
 .project { width: 58%; display: flex; flex-direction: column; }
 .project h3 { margin: 5px 0 12px; font-size: 13px; }
 .project p { margin: 0; color: #416b70; font-size: 12px; line-height: 1.5; }
@@ -67,11 +84,29 @@ button { border: 0; background: teal; color: white; }
 button:hover { background: #006666; }
 
 .footer {
-  height: 70px; display: flex; align-items: center; justify-content: space-between;
-  padding: 0 50px; background: teal; color: white; font-size: 11px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 50px;
+  background: teal;
+  color: white;
+  font-size: 11px;
 }
-.footer div { display: flex; gap: 10px; }
-.footer div a { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border: 1px solid white; border-radius: 50%; font-weight: bold; }
+.footer div {
+  display: flex;
+  gap: 10px;
+}
+.footer div a {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-weight: bold;
+}
 @media (max-width: 700px) {
   .header { height: auto; padding: 15px 5%; flex-direction: column; gap: 10px; }
   .nav { flex-wrap: wrap; justify-content: center; gap: 12px; }
