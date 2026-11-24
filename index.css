@@ -62,8 +62,9 @@ section {
 
 #skills li {
   border: 1px solid #63bea1;
-  padding: 12px 20px;
+  padding: 15px 25px;
   border-radius: 5px;
+  text-align: center;
 }
 
 .project {
