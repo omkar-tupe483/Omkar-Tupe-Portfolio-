@@ -1,0 +1,89 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #164e55; background: white; }
+a { color: inherit; text-decoration: none; }
+.nav a:hover, .button:hover, .project a:hover { color: white; background: teal; }
+
+.header { height: 70px; display: flex; align-items: center; justify-content: space-between; padding: 0 50px; background: lightcyan; }
+.header b { font-size: 18px; }
+.nav { display: flex; gap: 28px; }
+.nav a { padding: 24px 0 18px; font-size: 13px; font-weight: bold; }
+.nav .active { color: teal; border-bottom: 3px solid aqua; }
+
+.section { padding: 25px 110px; }
+.section h2 { margin: 0 0 18px; font-size: 23px; }
+.hero { min-height: 280px; display: flex; align-items: center; justify-content: space-between; background: lightcyan; }
+.hero h1, .hero h2 { margin: 0; font-size: 30px; }
+.hero h2 { color: teal; margin-bottom: 10px; }
+.hero p { margin: 0 0 14px; color: #416b70; }
+.button { display: inline-block; padding: 9px 25px; border-radius: 20px; background: teal; color: white; font-size: 13px; font-weight: bold; }
+
+.profile {
+  width: 180px; height: 180px; border-radius: 50%; overflow: hidden;
+  background: paleturquoise;
+}
+.profile img { width: 100%; height: 100%; display: block; object-fit: cover; object-position: center; }
+
+.about { display: flex; align-items: center; gap: 40px; }
+.about div { width: 50%; }
+.lines { display: flex; flex-direction: column; gap: 9px; }
+.lines i { width: 100%; height: 8px; border-radius: 5px; background: paleturquoise; }
+.lines i:last-child { width: 78%; }
+.image {
+  height: 105px; display: flex; align-items: center; justify-content: center;
+  border-radius: 5px; background: paleturquoise; color: teal; font-size: 55px;
+}
+
+.skills { display: flex; justify-content: space-between; gap: 15px; }
+.skills div {
+  width: 18%; height: 90px; display: flex; flex-direction: column;
+  align-items: center; justify-content: center;
+  border: 1px solid aqua; border-radius: 5px;
+}
+.skill-icon { color: teal; font-size: 29px; font-weight: bold; }
+.skills b { margin-top: 8px; font-size: 11px; }
+
+.projects { display: flex; gap: 25px; }
+.project-card {
+  width: 50%; min-height: 160px; display: flex; gap: 12px;
+  padding: 12px; border: 1px solid aqua; border-radius: 5px;
+}
+.project-card .image { width: 42%; height: 135px; }
+.project { width: 58%; display: flex; flex-direction: column; }
+.project h3 { margin: 5px 0 12px; font-size: 13px; }
+.project p { margin: 0; color: #416b70; font-size: 12px; line-height: 1.5; }
+.project a { width: fit-content; margin-top: auto; padding: 7px 14px; border: 1px solid teal; border-radius: 15px; color: teal; font-size: 11px; }
+
+.contact { background: lightcyan; }
+.contact-box { display: flex; gap: 20px; }
+.contact-info { width: 32%; line-height: 2.2; font-size: 13px; }
+form { width: 68%; display: flex; flex-direction: column; gap: 8px; }
+.form-row { display: flex; gap: 8px; }
+input, textarea, button {
+  width: 100%; border: 1px solid aqua; border-radius: 3px;
+  padding: 9px; font: 12px Arial, sans-serif;
+}
+textarea { height: 70px; }
+button { border: 0; background: teal; color: white; }
+button:hover { background: #006666; }
+
+.footer {
+  height: 70px; display: flex; align-items: center; justify-content: space-between;
+  padding: 0 50px; background: teal; color: white; font-size: 11px;
+}
+.footer div { display: flex; gap: 10px; }
+.footer div a { width: 24px; height: 24px; display: flex; align-items: center; justify-content: center; border: 1px solid white; border-radius: 50%; font-weight: bold; }
+@media (max-width: 700px) {
+  .header { height: auto; padding: 15px 5%; flex-direction: column; gap: 10px; }
+  .nav { flex-wrap: wrap; justify-content: center; gap: 12px; }
+  .nav a { padding: 8px 4px; }
+  .section { padding: 25px 5%; }
+  .hero { flex-direction: column; gap: 25px; text-align: center; }
+  .about, .contact-box { flex-direction: column; }
+  .about div, .contact-info, form { width: 100%; }
+  .skills { flex-wrap: wrap; }
+  .skills div { width: 30%; margin-bottom: 10px; }
+  .projects { flex-direction: column; }
+  .project-card { width: 100%; }
+  .form-row { flex-direction: column; }
+  .footer { height: auto; padding: 15px 5%; gap: 10px; }
+}
