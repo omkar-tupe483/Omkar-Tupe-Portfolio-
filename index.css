@@ -4,9 +4,13 @@
 
 body {
   margin: 0;
-  font-family: Lobster, Roboto;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
   color: #24565d;
   background-color: #f5fbfa;
+}
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 a {
@@ -49,9 +53,19 @@ section {
   background-color: #dff4ea;
 }
 
+#home h1 {
+  font-size: 40px;
+}
+
+#home a {
+  margin: 5px;
+}
+
 #home img {
   border-radius: 50%;
   margin-top: 20px;
+  object-fit: cover;
+  border: 4px solid #63bea1;
 }
 
 #skills ul {
@@ -106,6 +120,7 @@ section {
   padding: 10px;
   border: 1px solid #63bea1;
   border-radius: 5px;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 button {
@@ -115,6 +130,7 @@ button {
   padding: 10px 25px;
   border-radius: 20px;
   cursor: pointer;
+  font-family: "Segoe UI", Tahoma, Verdana, sans-serif;
 }
 
 button:hover {
@@ -146,5 +162,14 @@ button:hover {
 
   section {
     padding: 30px 20px;
+  }
+
+  .contact-box {
+    flex-direction: column;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
   }
 }
